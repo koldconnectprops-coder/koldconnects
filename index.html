@@ -102,19 +102,32 @@
       color: var(--white) !important;
     }
 
-    .hero {
-      min-height: 88vh;
-      display: grid;
-      place-items: center;
-      text-align: center;
-      padding: 95px 0 80px;
-    }
+.hero {
+  min-height: 88vh;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 95px 0 80px;
+}
 
-    .logo {
-      width: min(390px, 82vw);
-      margin-bottom: 26px;
-      filter: drop-shadow(0 0 30px rgba(56, 189, 248, 0.28));
-    }
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 900px;
+  max-width: 85vw;
+  opacity: 0.12;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
 
     .eyebrow {
       display: inline-block;
