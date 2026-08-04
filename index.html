@@ -553,7 +553,7 @@
         </p>
 
         <div class="button-row">
-          <a class="button button-primary" href="mailto:koldconnectprops@gmail.com">
+         <a class="button button-primary" href="#consultation-form">
             Book a Free Consultation
           </a>
 
@@ -706,25 +706,50 @@
       </div>
     </section>
 
-    <section class="cta">
-      <div class="container">
-        <div class="cta-box">
-          <div class="section-label">Founding Client Opportunities</div>
-          <h2>Ready to give yourself more time?</h2>
+    <section id="consultation-form" class="cta">
+  <div class="container">
+    <div class="cta-box">
+      <div class="section-label">Free Consultation</div>
+      <h2>Tell us about your business</h2>
 
-          <p>
-            Tell us what slows your business down. We’ll explore how automation
-            can simplify the work and help your company grow.
-          </p>
+      <form action="https://koldconnectsllc.app.n8n.cloud/webhook/koldconnects-lead" method="POST">
 
-          <div class="button-row">
-            <a class="button button-primary" href="mailto:koldconnectprops@gmail.com">
-              Start the Conversation
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+        <input type="text" name="name" placeholder="Your Name" required><br><br>
+
+        <input type="text" name="business_name" placeholder="Business Name" required><br><br>
+
+        <input type="email" name="email" placeholder="Email" required><br><br>
+
+        <input type="text" name="phone" placeholder="Phone Number"><br><br>
+
+        <input type="text" name="industry" placeholder="Industry"><br><br>
+
+        <select name="service_needed">
+          <option>AI Receptionist</option>
+          <option>Lead Automation</option>
+          <option>CRM Automation</option>
+          <option>Custom AI Workflow</option>
+        </select>
+
+        <br><br>
+
+        <textarea
+          name="message"
+          placeholder="Tell us about your business..."
+          rows="6"
+          required></textarea>
+
+        <br><br>
+
+        <button class="button button-primary" type="submit">
+          Submit Consultation
+        </button>
+
+      </form>
+
+    </div>
+  </div>
+</section>
   </main>
 
   <footer>
